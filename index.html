@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mahmuda Khatun (Malala) — Personal Portfolio showcasing creative web design, AI visual artistry, motion graphics, character animations, games, and verified digital projects." />
+  <meta name="author" content="Mahmuda Khatun" />
+  <meta name="theme-color" content="#070c18" />
+
+  <title>Mahmuda Khatun (Malala) | Creative Portfolio & Digital Works</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon / Logo -->
+  <link rel="icon" type="image/jpeg" href="assets/logo/mahmuda_khatun_logo.jpg" />
+</head>
+<body class="bg-dark text-light antialiased selection:bg-cyan-500 selection:text-black">
+
+  <!-- Ambient Cursor Glow Effect -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Page Preloader & Animated Logo Intro -->
+  <div class="site-preloader" id="sitePreloader">
+    <div class="preloader-content">
+      <div class="preloader-logo-ring">
+        <div class="ring-pulse"></div>
+        <img src="assets/logo/mahmuda_khatun_logo.jpg" alt="Mahmuda Khatun Logo" class="preloader-logo-img" />
+      </div>
+      <div class="preloader-text-wrap">
+        <h2 class="preloader-title">Mahmuda Khatun</h2>
+        <p class="preloader-subtitle">Creative Portfolio & Digital Showcase</p>
+      </div>
+      <div class="preloader-bar">
+        <div class="preloader-progress" id="preloaderProgress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <a href="#home" class="brand-logo" aria-label="Mahmuda Khatun Home">
+        <div class="brand-img-wrap">
+          <img src="assets/logo/mahmuda_khatun_logo.jpg" alt="Logo icon" class="brand-img" />
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Mahmuda Khatun</span>
+          <span class="brand-sub">Portfolio</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#creative-works" class="nav-link">Creative Works</a></li>
+          <li><a href="#images" class="nav-link">Image Gallery</a></li>
+          <li><a href="#videos" class="nav-link">Video Gallery</a></li>
+          <li><a href="#games" class="nav-link">My Games</a></li>
+          <li><a href="#documents" class="nav-link">Documents</a></li>
+          <li><a href="#contact" class="nav-link nav-cta">Get in Touch</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action & Mobile Hamburger -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-sm btn-glow hide-mobile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          <span>Contact</span>
+        </a>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+      <div class="mobile-drawer-header">
+        <div class="brand-logo">
+          <img src="assets/logo/mahmuda_khatun_logo.jpg" alt="Logo" class="brand-img" />
+          <span class="brand-name">Mahmuda Khatun</span>
+        </div>
+        <button class="close-drawer-btn" id="closeDrawerBtn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-nav-list">
+        <li><a href="#home" class="mobile-nav-link">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About Me</a></li>
+        <li><a href="#creative-works" class="mobile-nav-link">Creative Works</a></li>
+        <li><a href="#images" class="mobile-nav-link">Image Gallery</a></li>
+        <li><a href="#videos" class="mobile-nav-link">Video Gallery</a></li>
+        <li><a href="#games" class="mobile-nav-link">My Games</a></li>
+        <li><a href="#documents" class="mobile-nav-link">Documents & Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <p class="drawer-contact-line">📍 Bhagolpur, Rajbari, Bangladesh</p>
+        <p class="drawer-contact-line">📞 +880 1765 770196</p>
+      </div>
+    </div>
+  </header>
+
+  <main id="mainContent">
+
+    <!-- ================= 1. HERO / HOME ================= -->
+    <section class="hero-section" id="home">
+      <!-- Background elements -->
+      <div class="hero-backdrop" aria-hidden="true">
+        <div class="glow-orb orb-primary"></div>
+        <div class="glow-orb orb-secondary"></div>
+        <div class="glow-orb orb-tertiary"></div>
+        <div class="hero-grid-pattern"></div>
+      </div>
+
+      <div class="container hero-container">
+        <!-- Prominent Logo Presentation as Main Visual Element -->
+        <div class="hero-logo-wrapper" data-tilt>
+          <div class="hero-logo-halo"></div>
+          <div class="hero-logo-frame">
+            <img src="assets/logo/mahmuda_khatun_logo.jpg" alt="Mahmuda Khatun Official Logo" class="hero-logo-img" id="heroLogoImg" />
+          </div>
+          <div class="hero-logo-badge">
+            <span class="badge-dot"></span>
+            <span class="badge-text">Official Identity & Portfolio</span>
+          </div>
+        </div>
+
+        <!-- Hero Text & Welcoming Introduction -->
+        <div class="hero-intro">
+          <div class="hero-greeting-pill">
+            <span class="sparkle-icon">✨</span>
+            <span>Welcome to My Creative Universe</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="text-gradient">Mahmuda Khatun</span>
+            <span class="hero-nickname">(Malala)</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Web Designer • AI Visual Artist • Digital Creative Specialist
+          </p>
+
+          <p class="hero-description">
+            Graduate of Government Rajendra College crafting modern responsive web experiences, captivating AI visual arts, dynamic motion graphics, character animations, and interactive web games. Explore my verified desktop portfolio below.
+          </p>
+
+          <!-- Quick Action CTAs -->
+          <div class="hero-cta-group">
+            <a href="#creative-works" class="btn btn-primary btn-glow">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              <span>Explore Featured Works</span>
+            </a>
+            <a href="#videos" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>
+              <span>Watch Video Reel</span>
+            </a>
+            <a href="#games" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="6" cy="12" r="1"></circle><circle cx="10" cy="12" r="1"></circle><path d="M15 9l3 3-3 3"></path></svg>
+              <span>Play Games</span>
+            </a>
+          </div>
+
+          <!-- Quick Metric Badges -->
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <span class="stat-number" id="statImages">37+</span>
+              <span class="stat-label">Visual Artworks</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" id="statVideos">17+</span>
+              <span class="stat-label">Motion Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">2</span>
+              <span class="stat-label">Playable Games</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">60%</span>
+              <span class="stat-label">Verified Tech Score</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Me section">
+        <span class="scroll-mouse">
+          <span class="scroll-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ================= 2. ABOUT ME ================= -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Profile & Background</span>
+          <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+          <p class="section-description">
+            A dedicated professional combining academic excellence, responsive web design skills, high-speed digital transcription, and emerging AI creative technologies.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Identity & Education Card -->
+          <div class="about-card glass-panel" data-tilt>
+            <div class="about-card-badge">Academic Credentials</div>
+            <div class="card-icon-header">
+              <div class="icon-circle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+              </div>
+              <div>
+                <h3 class="about-card-title">Government Rajendra College</h3>
+                <p class="about-card-sub">Faridpur, Bangladesh</p>
+              </div>
+            </div>
+
+            <div class="timeline-items">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">Master's Degree (Honours / M.A. / M.S.S.)</h4>
+                  <p class="timeline-org">Government Rajendra College • Faridpur</p>
+                  <p class="timeline-desc">Advanced higher academic study with rigorous research, analytical comprehension, and literary synthesis.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title">Bachelor's Degree (Honours / B.A. / B.S.S.)</h4>
+                  <p class="timeline-org">Government Rajendra College • Faridpur</p>
+                  <p class="timeline-desc">Graduated with a solid foundation in academic disciplines, critical thinking, and technical writing.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Verified Tech Assessment Preview -->
+            <div class="verified-pill-box">
+              <div class="verified-icon">🛡️</div>
+              <div class="verified-info">
+                <strong>Technology Knowledge Assessment Verified</strong>
+                <p>Score: 60% • ID: AGY-D0EBY8WY • Issued: 07/10/2026</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Professional Summary & Competencies -->
+          <div class="about-card glass-panel" data-tilt>
+            <div class="about-card-badge">Professional Competencies</div>
+            <div class="card-icon-header">
+              <div class="icon-circle">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <div>
+                <h3 class="about-card-title">Technical & Creative Skills</h3>
+                <p class="about-card-sub">Web, AI Media, Data & Office Systems</p>
+              </div>
+            </div>
+
+            <p class="about-text-lead">
+              "A dedicated and detail-oriented professional with an advanced academic background from Government Rajendra College. Experienced in data entry, computer transcription, web design, and freelancing. Proven ability to handle technical tasks efficiently with high accuracy and a strong commitment to quality."
+            </p>
+
+            <div class="skills-block-group">
+              <div class="skill-category">
+                <h5 class="skill-cat-title">💻 Web Technologies</h5>
+                <div class="skill-tags">
+                  <span class="skill-tag">HTML5</span>
+                  <span class="skill-tag">CSS3</span>
+                  <span class="skill-tag">Responsive Web Design</span>
+                  <span class="skill-tag">Modern UI/UX</span>
+                  <span class="skill-tag">Basic Web Maintenance</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h5 class="skill-cat-title">⚡ Office Applications & Data</h5>
+                <div class="skill-tags">
+                  <span class="skill-tag">Computer Typing (English & Bengali)</span>
+                  <span class="skill-tag">High-Precision Data Entry</span>
+                  <span class="skill-tag">MS Word</span>
+                  <span class="skill-tag">MS Excel</span>
+                  <span class="skill-tag">PowerPoint</span>
+                  <span class="skill-tag">File Conversion & Auditing</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h5 class="skill-cat-title">🎨 AI Creative & Media</h5>
+                <div class="skill-tags">
+                  <span class="skill-tag">AI Prompt Engineering</span>
+                  <span class="skill-tag">Text-to-Video Animation</span>
+                  <span class="skill-tag">Visual Identity Design</span>
+                  <span class="skill-tag">Character Animation Direction</span>
+                </div>
+              </div>
+
+              <div class="skill-category">
+                <h5 class="skill-cat-title">🌟 Personal Interests</h5>
+                <div class="skill-tags">
+                  <span class="skill-tag">🚗 Driving & Route Exploration</span>
+                  <span class="skill-tag">🎶 Music & Vocal Singing</span>
+                  <span class="skill-tag">🍳 Culinary Arts & Recipe Innovation</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-actions">
+              <a href="assets/docs/MAHMUDA-Resume.pdf" download class="btn btn-primary btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <span>Download Official CV (PDF)</span>
+              </a>
+              <button class="btn btn-secondary btn-sm" id="btnPreviewCv">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                <span>Quick View CV</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 3. CREATIVE WORKS (FEATURED SPOTLIGHT) ================= -->
+    <section class="section creative-works-section" id="creative-works">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Curated Highlights</span>
+          <h2 class="section-title">Creative <span class="text-gradient">Works</span></h2>
+          <p class="section-description">
+            A hand-picked showcase featuring the best images, cinematic motion clips, playable games, and brand identities crafted from my desktop collection.
+          </p>
+        </div>
+
+        <!-- Featured Grid -->
+        <div class="featured-grid" id="featuredGrid">
+          <!-- Populated dynamically via script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 4. IMAGE GALLERY ================= -->
+    <section class="section gallery-section" id="images">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Visual Portfolio</span>
+          <h2 class="section-title">Image <span class="text-gradient">Gallery</span></h2>
+          <p class="section-description">
+            Explore 37 unique high-resolution visuals from <span class="code-pill">malala1</span>: AI landscapes, haute couture fashion, brand packaging, and architectural sanctuaries.
+          </p>
+        </div>
+
+        <!-- Gallery Controls: Search & Categories -->
+        <div class="gallery-controls">
+          <div class="search-box-wrap">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="imageSearchInput" class="search-input" placeholder="Search visual works by title, style, or tag..." aria-label="Search images" />
+            <button class="clear-search-btn" id="clearImageSearch" aria-label="Clear search">&times;</button>
+          </div>
+
+          <div class="category-pills" id="imageCategoryPills" role="tablist" aria-label="Image Categories">
+            <button class="cat-pill active" data-filter="all">All Visuals <span class="pill-count" id="countImgAll">37</span></button>
+            <button class="cat-pill" data-filter="AI Art & Nature">AI Art & Nature <span class="pill-count">3</span></button>
+            <button class="cat-pill" data-filter="Branding & Product Design">Branding & Products <span class="pill-count">8</span></button>
+            <button class="cat-pill" data-filter="Portraits & Fashion">Portraits & Fashion <span class="pill-count">6</span></button>
+            <button class="cat-pill" data-filter="Architecture & Interiors">Architecture & Interiors <span class="pill-count">20</span></button>
+          </div>
+        </div>
+
+        <!-- Images Grid -->
+        <div class="images-grid" id="imagesGrid">
+          <!-- Dynamic rendering from portfolio-data.js -->
+        </div>
+
+        <!-- Empty Results Message -->
+        <div class="empty-state" id="imagesEmptyState" style="display:none;">
+          <div class="empty-icon">🔍</div>
+          <h4>No matching images found</h4>
+          <p>Try modifying your search keywords or choosing another category filter.</p>
+          <button class="btn btn-secondary btn-sm" id="resetImagesFilter">Reset Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 5. VIDEO GALLERY ================= -->
+    <section class="section video-section" id="videos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Motion & Animations</span>
+          <h2 class="section-title">Video <span class="text-gradient">Gallery</span></h2>
+          <p class="section-description">
+            High-definition video creations from <span class="code-pill">malala2</span> with interactive hover previews, custom poster thumbnails, and embedded full-screen playback.
+          </p>
+        </div>
+
+        <!-- Video Filter Controls -->
+        <div class="gallery-controls">
+          <div class="search-box-wrap">
+            <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+            <input type="text" id="videoSearchInput" class="search-input" placeholder="Search videos by title or topic..." aria-label="Search videos" />
+            <button class="clear-search-btn" id="clearVideoSearch" aria-label="Clear search">&times;</button>
+          </div>
+
+          <div class="category-pills" id="videoCategoryPills" role="tablist" aria-label="Video Categories">
+            <button class="cat-pill active" data-filter="all">All Videos <span class="pill-count" id="countVidAll">17</span></button>
+            <button class="cat-pill" data-filter="Character Animation">Character Animation <span class="pill-count">5</span></button>
+            <button class="cat-pill" data-filter="Commercials & UGC">Commercials & UGC <span class="pill-count">3</span></button>
+            <button class="cat-pill" data-filter="Nature & Visuals">Nature & Visuals <span class="pill-count">2</span></button>
+            <button class="cat-pill" data-filter="Creative Showcase">Creative Showcase <span class="pill-count">5</span></button>
+            <button class="cat-pill" data-filter="AI Motion Graphics">Motion Graphics <span class="pill-count">2</span></button>
+          </div>
+        </div>
+
+        <!-- Videos Grid -->
+        <div class="videos-grid" id="videosGrid">
+          <!-- Dynamic rendering from portfolio-data.js -->
+        </div>
+
+        <!-- Empty State -->
+        <div class="empty-state" id="videosEmptyState" style="display:none;">
+          <div class="empty-icon">🎬</div>
+          <h4>No matching videos found</h4>
+          <p>Try searching for different animation terms or reset category filters.</p>
+          <button class="btn btn-secondary btn-sm" id="resetVideosFilter">Reset Video Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 6. MY GAMES ================= -->
+    <section class="section games-section" id="games">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Playable Interactive Projects</span>
+          <h2 class="section-title">My <span class="text-gradient">Games</span> & Apps</h2>
+          <p class="section-description">
+            Fully functional, verified interactive projects built with HTML5 Canvas, Web Audio synthesizers, and modern glassmorphism styling. Playable directly in your browser.
+          </p>
+        </div>
+
+        <div class="games-grid">
+          <!-- Game 1: Bear Chase Run -->
+          <div class="game-card glass-panel" data-tilt>
+            <div class="game-media-header">
+              <div class="game-badge">🎮 Playable HTML5 Canvas Game</div>
+              <div class="game-art-preview">
+                <div class="game-art-overlay">
+                  <button class="game-play-btn" id="btnLaunchBearGame" aria-label="Launch Bear Chase Run game">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Play Now</span>
+                  </button>
+                </div>
+                <img src="assets/thumbnails/Boy_playing_with_fish_20261005094612_thumb.jpg" alt="Bear Chase Run Preview" class="game-thumb-img" />
+              </div>
+            </div>
+
+            <div class="game-content">
+              <div class="game-title-row">
+                <h3 class="game-title">Bear Chase Run 🐻</h3>
+                <span class="game-status-pill online">● Ready to Play</span>
+              </div>
+
+              <p class="game-desc">
+                An exhilarating endless-runner arcade game where players sprint through mountain forests, dodge trees, rocks, and environmental hurdles, escaping a relentless pursuing bear with dynamic audio synthesis and real-time score tracking.
+              </p>
+
+              <div class="game-features">
+                <div class="game-feat-item">
+                  <span class="feat-icon">🕹️</span>
+                  <span><strong>Controls:</strong> Spacebar / Tap to Jump • Arrow Keys to Move</span>
+                </div>
+                <div class="game-feat-item">
+                  <span class="feat-icon">🔊</span>
+                  <span><strong>Audio:</strong> Procedural Web Audio API sound synthesis</span>
+                </div>
+                <div class="game-feat-item">
+                  <span class="feat-icon">📱</span>
+                  <span><strong>Devices:</strong> Responsive on Desktop, Tablets & Mobile</span>
+                </div>
+              </div>
+
+              <div class="game-tags">
+                <span class="game-tag">HTML5 Canvas</span>
+                <span class="game-tag">Arcade Runner</span>
+                <span class="game-tag">Web Audio</span>
+                <span class="game-tag">Procedural 2D</span>
+              </div>
+
+              <div class="game-actions">
+                <button class="btn btn-primary btn-glow" id="btnLaunchBearGameModal">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                  <span>Launch Game in Modal</span>
+                </button>
+                <a href="assets/games/bear-chase-game.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Open Standalone Tab</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- App 2: Precision Glassmorphism Calculator -->
+          <div class="game-card glass-panel" data-tilt>
+            <div class="game-media-header">
+              <div class="game-badge">🧮 Interactive Web Tool</div>
+              <div class="game-art-preview">
+                <div class="game-art-overlay">
+                  <button class="game-play-btn" id="btnLaunchCalcModal" aria-label="Launch Calculator tool">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                    <span>Try App</span>
+                  </button>
+                </div>
+                <img src="assets/images/Apnar_Projukti_Gyan_Score_60.png" alt="Calculator App Preview" class="game-thumb-img" />
+              </div>
+            </div>
+
+            <div class="game-content">
+              <div class="game-title-row">
+                <h3 class="game-title">Precision Glassmorphism Calculator</h3>
+                <span class="game-status-pill online">● Ready to Use</span>
+              </div>
+
+              <p class="game-desc">
+                A sleek, tactile digital calculator engineered with dark glassmorphism gradients, responsive touch/keyboard bindings, precision arithmetic calculation, and smooth visual button ripple feedback.
+              </p>
+
+              <div class="game-features">
+                <div class="game-feat-item">
+                  <span class="feat-icon">⌨️</span>
+                  <span><strong>Input:</strong> Mouse clicks, Mobile touch & Keyboard numpad</span>
+                </div>
+                <div class="game-feat-item">
+                  <span class="feat-icon">✨</span>
+                  <span><strong>Design:</strong> Dark glass backdrop-filter with neon accents</span>
+                </div>
+                <div class="game-feat-item">
+                  <span class="feat-icon">⚡</span>
+                  <span><strong>Performance:</strong> Lightweight, zero external dependencies</span>
+                </div>
+              </div>
+
+              <div class="game-tags">
+                <span class="game-tag">JavaScript ES6</span>
+                <span class="game-tag">Glassmorphism</span>
+                <span class="game-tag">CSS Flex/Grid</span>
+                <span class="game-tag">Utility Tool</span>
+              </div>
+
+              <div class="game-actions">
+                <button class="btn btn-primary btn-glow" id="btnLaunchCalcModal2">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                  <span>Launch Tool in Modal</span>
+                </button>
+                <a href="assets/games/calculator.html" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Open Standalone Tab</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 7. DOCUMENTS & PROJECTS ================= -->
+    <section class="section docs-section" id="documents">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Credentials & Syllabus</span>
+          <h2 class="section-title">Documents & <span class="text-gradient">Projects</span></h2>
+          <p class="section-description">
+            Access verified academic CVs, official technology assessment reports, and AI educational training modules from desktop files.
+          </p>
+        </div>
+
+        <div class="docs-grid">
+          <!-- Document 1: Official CV -->
+          <div class="doc-card glass-panel" data-tilt>
+            <div class="doc-icon-wrap pdf">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <div class="doc-content">
+              <div class="doc-header-row">
+                <span class="doc-type-badge pdf">PDF Document • 87 KB</span>
+                <span class="doc-status-badge verified">Verified Resume</span>
+              </div>
+              <h3 class="doc-title">Mahmuda Khatun — Official Curriculum Vitae</h3>
+              <p class="doc-desc">
+                Highlights Master's and Bachelor's degrees from Government Rajendra College (Faridpur), freelance web design work, computer typing accuracy, and professional competencies.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-tag">Govt. Rajendra College</span>
+                <span class="doc-tag">Web Design</span>
+                <span class="doc-tag">Office Applications</span>
+                <span class="doc-tag">Bengali & English</span>
+              </div>
+              <div class="doc-actions">
+                <button class="btn btn-secondary btn-sm" id="btnViewCvDoc">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Preview CV</span>
+                </button>
+                <a href="assets/docs/MAHMUDA-Resume.pdf" download class="btn btn-primary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Download</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document 2: Technology Assessment Report -->
+          <div class="doc-card glass-panel" data-tilt>
+            <div class="doc-icon-wrap cert">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+            </div>
+            <div class="doc-content">
+              <div class="doc-header-row">
+                <span class="doc-type-badge cert">Verified Assessment • Score 60%</span>
+                <span class="doc-status-badge verified">ID: AGY-D0EBY8WY</span>
+              </div>
+              <h3 class="doc-title">Technology Knowledge Assessment Report</h3>
+              <p class="doc-desc">
+                Official digital assessment verifying foundational tech comprehension for <strong>Malala Rahman</strong>. Issued on 07/10/2026 by Shamim Ahsan.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-tag">Participant: Malala Rahman</span>
+                <span class="doc-tag">Score: 60/100</span>
+                <span class="doc-tag">Verified Digital Platform</span>
+              </div>
+              <div class="doc-actions">
+                <button class="btn btn-secondary btn-sm" id="btnViewScoreDoc">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>View Certificate</span>
+                </button>
+                <a href="assets/images/Apnar_Projukti_Gyan_Score_60.png" download class="btn btn-primary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Download</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Document 3: AI Training Module -->
+          <div class="doc-card glass-panel" data-tilt>
+            <div class="doc-icon-wrap train">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path></svg>
+            </div>
+            <div class="doc-content">
+              <div class="doc-header-row">
+                <span class="doc-type-badge train">AI Syllabus • 480 KB</span>
+                <span class="doc-status-badge ai">Instructional</span>
+              </div>
+              <h3 class="doc-title">AI Based Basic Technology Training Module</h3>
+              <p class="doc-desc">
+                Curriculum module covering ChatGPT, Microsoft Copilot, DeepSeek, conversational AI prompting patterns, and digital acceleration strategies.
+              </p>
+              <div class="doc-meta-tags">
+                <span class="doc-tag">ChatGPT</span>
+                <span class="doc-tag">Copilot</span>
+                <span class="doc-tag">DeepSeek</span>
+                <span class="doc-tag">Prompt Engineering</span>
+              </div>
+              <div class="doc-actions">
+                <button class="btn btn-secondary btn-sm" id="btnViewAiTrainDoc">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                  <span>Preview Syllabus</span>
+                </button>
+                <a href="assets/docs/AI-Training-Module.pdf" download class="btn btn-primary btn-sm">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                  <span>Download</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= 8. CONTACT ================= -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Reach Out</span>
+          <h2 class="section-title">Get in <span class="text-gradient">Touch</span></h2>
+          <p class="section-description">
+            Interested in collaboration, web design commissions, AI visual generation, or digital transcription services? Reach out directly.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-wrap">
+            <!-- Location -->
+            <div class="contact-card glass-panel" data-tilt>
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Location / Address</span>
+                <p class="contact-val">Bhagolpur, Goalundo, Rajbari, Bangladesh</p>
+                <span class="contact-note">Permanent Resident</span>
+              </div>
+            </div>
+
+            <!-- Phone -->
+            <div class="contact-card glass-panel" data-tilt>
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Direct Phone</span>
+                <a href="tel:+8801765770196" class="contact-val phone-link">+880 1765 770196</a>
+                <span class="contact-note">Available for Professional Calls</span>
+              </div>
+            </div>
+
+            <!-- Academic Affiliation -->
+            <div class="contact-card glass-panel" data-tilt>
+              <div class="contact-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Alma Mater</span>
+                <p class="contact-val">Government Rajendra College, Faridpur</p>
+                <span class="contact-note">Master's & Bachelor's Degrees</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Message Form -->
+          <div class="contact-form-wrap glass-panel" data-tilt>
+            <h3 class="form-title">Send a Message</h3>
+            <p class="form-sub">Fill out the form below to send an inquiry directly.</p>
+
+            <form id="contactForm" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" class="form-input" placeholder="e.g. Shamim Ahsan" required />
+                <span class="form-error-msg" id="nameError">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <input type="email" id="contactEmail" class="form-input" placeholder="name@example.com" required />
+                <span class="form-error-msg" id="emailError">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject / Inquiry Type</label>
+                <select id="contactSubject" class="form-input form-select" required>
+                  <option value="" disabled selected>Select an inquiry topic...</option>
+                  <option value="Web Design Project">Web Design / Layout Collaboration</option>
+                  <option value="AI Visual Creation">AI Visual Art & Prompt Generation</option>
+                  <option value="Data Entry & Transcription">Data Entry & High-Speed Transcription</option>
+                  <option value="General Inquiries">General Networking / Other</option>
+                </select>
+                <span class="form-error-msg" id="subjectError">Please select an inquiry topic</span>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea id="contactMessage" class="form-input form-textarea" rows="4" placeholder="Write your message or project requirements here..." required></textarea>
+                <span class="form-error-msg" id="messageError">Please enter your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-glow btn-full" id="btnSubmitForm">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                <span>Send Message</span>
+              </button>
+
+              <div class="form-status" id="formStatus" style="display:none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <img src="assets/logo/mahmuda_khatun_logo.jpg" alt="Logo" class="brand-img" />
+            <span class="brand-name">Mahmuda Khatun (Malala)</span>
+          </div>
+          <p class="footer-desc">
+            Personal portfolio showcasing verified creative works, AI visual designs, video reels, interactive games, and academic credentials.
+          </p>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-nav-title">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#creative-works">Featured Works</a></li>
+            <li><a href="#images">Image Gallery</a></li>
+            <li><a href="#videos">Video Gallery</a></li>
+            <li><a href="#games">My Games</a></li>
+            <li><a href="#documents">Documents</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-group">
+          <h4 class="footer-nav-title">Contact Information</h4>
+          <p class="footer-contact-item">📍 Bhagolpur, Goalundo, Rajbari, Bangladesh</p>
+          <p class="footer-contact-item">📞 +880 1765 770196</p>
+          <p class="footer-contact-item">🎓 Government Rajendra College Alumna</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; 2026 Mahmuda Khatun. Built with pride using original desktop media assets. All rights reserved.
+        </p>
+        <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to top">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+          <span>Top</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS ================= -->
+
+  <!-- 1. Image Lightbox Modal -->
+  <div class="modal-backdrop" id="imageLightboxModal" aria-hidden="true" role="dialog" aria-label="Image Fullscreen View">
+    <div class="lightbox-dialog">
+      <div class="modal-top-bar">
+        <div class="modal-title-wrap">
+          <h3 class="modal-item-title" id="lightboxTitle">Image Title</h3>
+          <span class="modal-item-meta" id="lightboxMeta">Resolution • Size</span>
+        </div>
+        <div class="modal-top-actions">
+          <a href="#" download id="lightboxDownloadBtn" class="modal-btn-icon" title="Download Image">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+          <button class="modal-btn-icon" id="lightboxCloseBtn" title="Close (Esc)">&times;</button>
+        </div>
+      </div>
+
+      <div class="lightbox-stage">
+        <button class="stage-nav-btn prev" id="lightboxPrevBtn" aria-label="Previous image">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="stage-media-wrap">
+          <img src="" alt="" id="lightboxImg" class="lightbox-main-img" />
+        </div>
+
+        <button class="stage-nav-btn next" id="lightboxNextBtn" aria-label="Next image">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <div class="modal-caption-bar">
+        <p class="modal-caption-text" id="lightboxCaption">Description</p>
+        <div class="modal-tags-list" id="lightboxTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. Video Player Modal -->
+  <div class="modal-backdrop" id="videoPlayerModal" aria-hidden="true" role="dialog" aria-label="Video Player">
+    <div class="video-dialog">
+      <div class="modal-top-bar">
+        <div class="modal-title-wrap">
+          <h3 class="modal-item-title" id="videoModalTitle">Video Title</h3>
+          <span class="modal-item-meta" id="videoModalMeta">Duration • Resolution</span>
+        </div>
+        <div class="modal-top-actions">
+          <a href="#" download id="videoDownloadBtn" class="modal-btn-icon" title="Download Video">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+          <button class="modal-btn-icon" id="videoCloseBtn" title="Close">&times;</button>
+        </div>
+      </div>
+
+      <div class="video-stage">
+        <video id="modalVideoElement" class="modal-main-video" controls playsinline preload="metadata">
+          <source src="" type="video/mp4" id="modalVideoSource" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="modal-caption-bar">
+        <p class="modal-caption-text" id="videoModalDesc">Description</p>
+        <div class="modal-tags-list" id="videoModalTags"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Game & Interactive App Modal -->
+  <div class="modal-backdrop" id="gamePlayerModal" aria-hidden="true" role="dialog" aria-label="Interactive Game Modal">
+    <div class="game-dialog">
+      <div class="modal-top-bar">
+        <div class="modal-title-wrap">
+          <h3 class="modal-item-title" id="gameModalTitle">Bear Chase Run 🐻</h3>
+          <span class="modal-item-meta" id="gameModalMeta">Playable HTML5 Game</span>
+        </div>
+        <div class="modal-top-actions">
+          <button class="modal-btn-icon" id="gameReloadBtn" title="Restart Game">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+          </button>
+          <a href="#" target="_blank" rel="noopener noreferrer" id="gameNewTabBtn" class="modal-btn-icon" title="Open in New Tab">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </a>
+          <button class="modal-btn-icon" id="gameCloseBtn" title="Close">&times;</button>
+        </div>
+      </div>
+
+      <div class="game-stage">
+        <iframe id="gameIframe" src="about:blank" class="game-modal-iframe" allow="autoplay; fullscreen" sandbox="allow-scripts allow-same-origin"></iframe>
+      </div>
+
+      <div class="modal-caption-bar game-controls-bar">
+        <span class="game-control-badge">💡 Keyboard: Space to Jump • Arrow Keys to Move • Tap on Mobile</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Document Preview Modal -->
+  <div class="modal-backdrop" id="docPreviewModal" aria-hidden="true" role="dialog" aria-label="Document Preview">
+    <div class="doc-dialog">
+      <div class="modal-top-bar">
+        <div class="modal-title-wrap">
+          <h3 class="modal-item-title" id="docModalTitle">Document Title</h3>
+          <span class="modal-item-meta" id="docModalMeta">PDF Document</span>
+        </div>
+        <div class="modal-top-actions">
+          <a href="#" download id="docModalDownloadBtn" class="modal-btn-icon" title="Download Document">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+          </a>
+          <button class="modal-btn-icon" id="docCloseBtn" title="Close">&times;</button>
+        </div>
+      </div>
+
+      <div class="doc-stage" id="docStageContainer">
+        <!-- Replaced with iframe for PDF or img for Image assessment -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Manifest & Application Logic -->
+  <script src="portfolio-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
